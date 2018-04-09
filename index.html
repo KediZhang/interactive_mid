@@ -27,33 +27,42 @@
 
   <div class="container">
     <div class="header clearfix">
-      <nav>
+      <!-- <nav>
         <ul class="nav nav-pills pull-right">
           <li role="presentation" class="active"><a href="">Home</a></li>
           <li role="presentation"><a href="dataquality.html">Quality</a></li>
           <li role="presentation"><a href="approach.html">Approach</a></li>
         </ul>
-      </nav>
+      </nav> -->
       <h3 class="text-muted">Understanding the location of fashion rental service users</h3>
     </div>
-
     <br>
 
     <div class="lead" id="team">Kedi Zhang</div>
+    <hr>
 
     <h4>Introduction</h4>
-    <p>placeholder</p>
-    <ol>
-        <li>placeholder</li>
-        <li>placeholder</li>
-        <li>placeholder</li>
-    </ol>
-    <p>placeholder</p>
+    <p>Rental fashion is emerging these year as a part of shared economy. This data visualization focus on comparing two major player in US market:
+        <a href="https://www.renttherunway.com/">Renttherunway</a> and <a href="https://www.letote.com/">Letote</a>. 
+        The former brand provides rental of high-end dresses for special occasions, when the latter focus on daily casual dress.
+        </p>
+
+    <p>This project serves as part of my digital ethnography side project collaborating with other two friends. I'm in charge of data collecting and analysis to facilitate their works on participative observation and interview.
+        For example, one of the finding after ploting the users' locations is that there are quite a large proportion of users actully use this service outsides US or wear those clothes to travel. We didn't notice this part of people untill the graphic showed us. Therefore, it helped a lot to modify our wishlist of research plan and focus.</p>
 
     <br>
 
     <h4>About the Dataset</h4>
-    <p>placeholderplaceholderplaceholder</p>
+    <p>The data is scraped from Instagram since official API doesn't support location information of where the photo post is taken. When instagram user post each photo, they can add many tags to make the post more searchable, so I scrape the basic information (user name, location is any, post time, etc) of all the photo which has been attached with a "Letote" tag and "Renttherunway" tag.
+    As the screenshot shown below, the user "lananamendez" has tagged "Letote" in her post at Chicago Riverwalk.
+    </p>
+    <img src="images/datasource.png" width = "100%" alt="Instagram">
+    <p></p>
+    <p>Not all user post the location of their photo, and here is an overview of data I obtained:</p>    
+    <ol>
+        <li>Renttherunway: 16,597 posts with location out of 41,352 posts (last update 4/7/2018)</li>
+        <li>Letote: 3,556 posts with location out of 14,080 posts (last update 4/7 2018)</li>
+    </ol>
 
     <div id='data-table-container'>
     <a herf="https://www.instagram.com/explore/tags/letote/"></a>
@@ -61,12 +70,14 @@
 
     <br><hr>
 
-    <h4>Visualization 1: placeholderplaceholderplaceholder</h4>
-    <i>Question: placeholderplaceholderplaceholder</i>
+    <h4>Visualization</h4>
+    <!-- <i>Question: placeholderplaceholderplaceholder</i>
     <br><br>
     <div id="line-graph">
-        <p><b>placeholderplaceholderplaceholder</b></p>
-<div class='tableauPlaceholder' id='viz1523267173552' style='position: relative'><noscript><a href='#'><img alt='Distribution of Instagram Photos ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;DistributionofInstagramPhotos&#47;DistributionofInstagramPhotos&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='DistributionofInstagramPhotos&#47;DistributionofInstagramPhotos' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;DistributionofInstagramPhotos&#47;DistributionofInstagramPhotos&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1523267173552');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    <p>placeholderplaceholderplaceholder</p>
+        <p><b>placeholderplaceholderplaceholder</b></p> -->
+<div class='tableauPlaceholder' id='viz1523267173552' style='position: relative'><noscript><a href='#'><img alt='Distribution of Instagram Photos ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;DistributionofInstagramPhotos&#47;DistributionofInstagramPhotos&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='DistributionofInstagramPhotos&#47;DistributionofInstagramPhotos' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;DistributionofInstagramPhotos&#47;DistributionofInstagramPhotos&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1523267173552');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+<!-- <p>placeholderplaceholderplaceholder</p> -->
 
 <!-- 
     <br>
@@ -158,19 +169,23 @@
         </div>
     </div>
 -->
-    <br><br><hr> 
+    <br><hr> 
 
     <h4>Analysis</h4>
-    <i>Question: placeholderplaceholderplaceholder</i>
+    <i>Question: Does renttherunway dominate across US?</i>
     <br><br>
-    <p>placeholderplaceholderplaceholder</p>
+    <p>Renttherunway was launched in 2009 with 505 employee currently. On contrast, Letote is established in 2012 with a group of employee arounf 150. Letote is still under Series C funding, so there is gap between the volumn of two companies.</p>
 
-    <img class="analysis-images" src="static/chord_1980s.png">
-    <img class="analysis-images" src="static/heatmap_1980s.png">
 
-    <p>placeholderplaceholderplaceholder</p>
+    <img class="analysis-images" height = "200px" src="images/east.png">
+    <img class="analysis-images" height = "200px" src="images/nyc.png">
+    
+    <p>Northeast Area and New York City</p>
 
-    <p>placeholderplaceholderplaceholder</p>
+    <img class="analysis-images" height = "200px" src="images/bay.png">
+    <img class="analysis-images" height = "200px" src="images/sanf.png">
+    
+    <p>The Bay Area and Downtown San Francisco</p>
 
     <ul>
         <li>placeholderplaceholderplaceholder</li>
