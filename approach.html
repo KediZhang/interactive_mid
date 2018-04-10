@@ -32,260 +32,34 @@
         <ul class="nav nav-pills pull-right">
           <li role="presentation"><a href="index.html">Home</a></li>
           <li role="presentation"><a href="dataquality.html">Quality</a></li>
-          <li role="presentation"class="active"><a href="">Approach</a></li>
+          <li role="presentation"class="active"><a href="">Feedback</a></li>
         </ul>
       </nav>
       <br>
       <br>
       <hr>
-      <h3 class="text-muted">Understanding Fashion Rental Service Subscriber</h3>
+      <h3 class="text-muted">User feedback and Digital Ethnography</h3>
     </div>
     <br>
+    <p>Data used in this analysis is unpulished and
+        
+Where did this data come from?
 
-    <div class="lead" id="team">Kedi Zhang</div>
-    <hr>
-
-    <h4>Introduction</h4>
-    <p>Rental fashion is emerging these year as a part of shared economy. This data visualization focus on comparing two major player in US market:
-        <a href="https://www.renttherunway.com/">Renttherunway</a> and <a href="https://www.letote.com/">Letote</a>. 
-        The former brand provides rental of high-end dresses for special occasions, when the latter focus on daily casual dress.
-        </p>
-
+The data come from Wikipedia, List of disasters in the United States by death toll .
+Who has access to it?
+    </p>
     <p>This project serves as part of my digital ethnography side project collaborating with other two friends. I'm in charge of data collecting and analysis to facilitate their works on participative observation and interview.
-        For example, one of the finding after ploting the users' locations is that there are quite a large proportion of users actully use this service outsides US or wear those clothes to travel. We didn't notice this part of people untill the graphic showed us. Therefore, it helped a lot to modify our wishlist of research plan and focus.</p>
+        For example, one of the finding after ploting the users' locations is that there are quite a large proportion of users actully use this service outsides US or wear those clothes to travel. We didn't notice this part of people untill the graphic showed us. Therefore, it helped a lot to modify our wishlist of research plan and focus.
+    </p>
 
+    
     <br>
-
-    <h4>About the Dataset</h4>
+    <hr>
+    <h4>Complete</h4>
     <p>The data is scraped from Instagram since official API doesn't support location information of where the photo post is taken. When instagram user post each photo, they can add many tags to make the post more searchable, so I scrape the basic information (user name, location is any, post time, etc) of all the photo which has been attached with a "Letote" tag and "Renttherunway" tag.
     As the screenshot shown below, the user "lananamendez" has tagged "Letote" in her post at Chicago Riverwalk.
     </p>
-    <img src="images/datasource.png" width = "100%" alt="Instagram">
-    <p></p>
-    <p>Not all user post the location of their photo, and here is an overview of data I obtained:</p>    
-    <ol>
-        <li>Renttherunway: 16,597 posts with location out of 41,352 posts (last update 4/7/2018)</li>
-        <li>Letote: 3,556 posts with location out of 14,080 posts (last update 4/7 2018)</li>
-    </ol>
-
-    <div id='data-table-container'>
-    <a herf="https://www.instagram.com/explore/tags/letote/"></a>
-    </div>
-
-    <br><hr>
-
-    <h4>Visualization</h4>
-    <!-- <i>Question: placeholderplaceholderplaceholder</i>
-    <br><br>
-    <div id="line-graph">
-        <p><b>placeholderplaceholderplaceholder</b></p> -->
-<div class='tableauPlaceholder' id='viz1523267173552' style='position: relative'><noscript><a href='#'><img alt='Distribution of Instagram Photos ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;DistributionofInstagramPhotos&#47;DistributionofInstagramPhotos&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='DistributionofInstagramPhotos&#47;DistributionofInstagramPhotos' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Di&#47;DistributionofInstagramPhotos&#47;DistributionofInstagramPhotos&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1523267173552');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-
-<!-- <p>placeholderplaceholderplaceholder</p> -->
-
-<!-- 
-    <br>
-
-    <h4>Visualization 2: Compatibility of Genres</h4>
-    <i>Question: How has the compatibility of different fusion genres changed over time? (based on number of shared songs)</i>
-    <br><br>
-    <p>Using this interactive chord diagram, we can examine the similarities between the fusion genres over the decades. The thickness of each chord (connection between two genres) is proportional to the number of shared songs between the genres, conveying the similarity of those genres.</p>
-    <br>
-    <div id="chord-vis">
-        <div class="chord-diagram-main"></div>
-        <div class="chord-narratives" id="narrative-1950s">
-            <p class="lead">1950s – The Years of Rock n Roll</p>
-            <ul>
-                <li>Pop, Rock, Blues, Jazz, Country and Dance are the major genres in this decade.</li>
-                <li><b>Rock Dance</b>, <b>Pop Dance</b>, <b>Pop Rock</b>  are famous. These combination of genre all come under <a href="https://en.wikipedia.org/wiki/Rock_and_roll" target="_blank"><b>Rock n Roll</b></a>.</li>
-                <li><b>Rock n Roll</b> also had components of <b>Blues</b>. Hence <b>Blue Rock</b> was also famous.</li>
-            </ul>
-        </div>
-        <div class="chord-narratives" id="narrative-1960s">
-            <p class="lead">1960s – Experimentation & New Genres</p>
-            <ul>
-                <li>Rock and Pop are the most popular genres in 1960s followed by Blues, Folk, Jazz , Country and Dance.</li>
-                <li>Alternative, Rap , Metal, Indie and Dance have just started to emerge.</li>
-                <li>Latin music dies</li>
-                <li><a href="https://en.wikipedia.org/wiki/Alternative_rock" target="_blank"><b>Alternative Rock</b></a> which basically represented experimentation on Rock is just starting  to emerge.</li>
-                <li><a href="https://en.wikipedia.org/wiki/Jazz_fusion" target="_blank"><b>Jazz Rock</b></a> has emerged which is a very interesting genre as Jazz and Rock are quite different on acoustics.</li>
-            </ul>
-        </div>
-        <div class="chord-narratives" id="narrative-1970s">
-            <p class="lead">1970s – Embracing New Genres</p>
-            <ul>
-                <li>Suddenly we see <a href="https://en.wikipedia.org/wiki/Reggae" target="_blank">Reggae</a> become popular because of Bob Marley.</li>
-                <li><a href="https://en.wikipedia.org/wiki/Electronic_music" target="_blank">Electronic</a> and <a href="https://en.wikipedia.org/wiki/Disco" target="_blank">Disco</a> start to become popular.</li>
-                <li>Different forms of rock, <a href="https://en.wikipedia.org/wiki/Alternative_rock" target="_blank">alternative rock</a> and <a href="https://en.wikipedia.org/wiki/Heavy_metal_genres" target="_blank">metal</a> start gaining more popularity.</li>
-                <li>Electronic diversifies into Electronic Pop and Electronic Rock.</li>
-            </ul>
-        </div>
-        <div class="chord-narratives" id="narrative-1980s">
-            <p class="lead">1980s – Decline of Old Genres</p>
-            <ul>
-                <li>Folk music start to die and blues and jazz becomes less popular.</li>
-                <li>Reggae dies with <a href="https://en.wikipedia.org/wiki/Bob_Marley" target="_blank">Bob Marley</a></li>
-                <li>Electronic music diversifies into Electronic Dance besides rock and pop which is named as <a href="https://en.wikipedia.org/wiki/Electronic_dance_music" target="_blank">EDM</a> in short.</li>
-            </ul>
-        </div>
-        <div class="chord-narratives" id="narrative-1990s">
-            <p class="lead">1990s – Rise of Indie Artists</p>
-            <ul>
-                <li><a href="https://en.wikipedia.org/wiki/Hip_hop_music" target="_blank">Rap</a> gains popularity.</li>
-                <li>Disco declines, dance and electronic starts gaining huge popularity.</li>
-                <li>Indie bands rise at a huge rate as there is no need of record labels to sell music now as everyone has direct access to music for free or cheap via internet.</li>
-                <li>Indie rocks becomes more popular</li>
-            </ul>
-        </div>
-        <div class="chord-narratives" id="narrative-2000s">
-            <p class="lead">2000s – Music Sharing Becomes Popular</p>
-            <ul>
-                <li>Indie bands continue to rise even more because music sharing becomes popular.</li>
-                <li>Rap, Metal, electronic and dance continues to gain popularity.</li>
-                <li>Blues continue to die.</li>
-                <li>1990s-2000s had the same trend in compatibility. The fusion genres that emerged before continues to rise.</li>
-            </ul>
-        </div>
-        <div id="chord-vis-hint" class="lead">Hint: Hover over a genre to view similarities with other genres.</div>
-        <br>
-        <div id="chord-diagram-controls">
-            <div id="slider">
-                <div id="slider-handle" class="ui-slider-handle"></div>
-            </div>
-            <button type="button" class="btn btn-default" id="resetButton" onclick="restoreAllChordConnections()">Reset Connections</button>
-        </div>
-    </div>
-
-    <br><br><br>
-    <h4>Visualization 3: Compatibility of Genres</h4>
-    <i>Question: How has the compatibility of different fusion genres changed over time? (based on correlation of acoustics)</i>
-    <br><br>
-    <p>Similarly, we can use heatmaps to gauge the similarity between genres. However, instead of using the number of shared songs as a proxy for similarity, we will now use correlation between four acoustic features (average timbre, tempo, loudness, duration) to measure similarity between genres over the six decades. Red squares indicate high correlation in acoustics, conveying similarity between the genres.</p>
-    <br>
-
-    <div id="heatmap-vis">
-        <img id="heatmap" src="static/heatmap_1950s.png">
-        <br>
-        <div id="heatmap-controls">
-            <div id="slider-2">
-                <div id="slider-handle-2" class="ui-slider-handle"></div>
-            </div>
-        </div>
-    </div>
--->
-    <br><hr> 
-
-    <h4>Analysis</h4>
-
-    <i>Question: Is all the user cases inside US?</i>
-    
-    <img class="analysis-images" width = "100%" src="images/global.png">
-    <p>It's interesting to find that there are quite a large proportion of users actully use this service outsides US or wear those clothes to travel. We are not able to conclude whether they're overseas service subscriber or domestic users who wear the clothes during their travel. We didn't notice this part of people untill the graphic showed us. Therefore, it helped a lot to modify our wishlist of research plan and focus.</p>
-    </p>
-    
-<!--     
-    <ul>
-        <li>placeholderplaceholderplaceholder</li>
-    </ul> -->
-
-    <br>
-
-    <i>Question: Does renttherunway dominate across US?</i>
-    <br>    
-
-    <iframe src="https://cdn.datamatic.io/runtime/echarts/3.7.2_230/embedded/index.html#id=116500766452596807846/1Jk0Arzj_hcY2VwtmfjggU0hlzvcqNshX" frameborder="0" width="100%" height="443" allowtransparency="true"></iframe>
-    <p>Renttherunway was launched in 2009 with 505 employee currently. On contrast, Letote is established in 2012 with a group of employee arounf 150. Letote is still under Series C funding, so there is gap between the volumn of two companies.
-        The plots above clearly shows the dominance of RentTheRunway in east costal area. However, in the bay area where Letote was launched, ladies are open to both brands and many of them are subscribing both services (shown in orange dots).
-    </p>
-    <img class="analysis-images" width = "100%" src="images/ec.png">
-    <p>North, East Area and New York City</p>
-    <img class="analysis-images" width = "100%" src="images/ca.png">
-    <p>California and Downtown San Francisco</p>
-
-    
-    <!-- <img class="analysis-images" height = "200px" src="images/nyc.png"> -->
-    
-    <!-- <img class="analysis-images" height = "200px" src="images/sanf.png"> -->
-
-    <br>
-    <hr>
-
-    <h4>Conclusion</h4>
-    <p>Several patterns about fashion rental service subscribers are lised below. However, I still find the information extracted so far are limited, further works are definetly needed.</p>
-    <ul>
-        <li>RentTheRunway is popular in both metropolitian area and small scale cities when Letote's business is still constricted in big cities</li>
-
-        <li>RentTheRunway is popular in both metropolitian area and small scale cities when Letote's business is still constricted in big cities</li>
-        <li>RentTheRunway is popular in both metropolitian area and small scale cities when Letote's business is still constricted in big cities</li>
-        
-    </ul>
-    <p>There will be more findings as my digital ethnography continues and the data analysis will definetly give insights and help our qualitative research works. Other social media platforms and forums like Facebook, Reddit and Yelp could be data resources for next steps of analysis.</p>
     <br><br>
   </div>
 </body>
 </html>
-<!-- 
-<script>
-var year = "1950s"  // Initial decade
-var year_heatmap = "1950s"
-
-$( function() {
-
-    // Chord diagram slider
-    var handle = $("#slider-handle");
-    $("#slider").slider({
-      value:1950,
-      min: 1950,
-      max: 2000,
-      step: 10,
-      create: function() {
-        handle.text( $( this ).slider( "value" ) + "s" );
-        // Set initial year to 1950s
-        changeDataYear(year)
-        updateChordNarrative(year)
-      },
-      slide: function( event, ui ) {
-        year = ui.value + "s"
-        handle.text(year);
-        // Change year based on slider value
-        changeDataYear(year)
-        updateChordNarrative(year)
-      }
-    });
-
-    // Heatmap slider
-    var handle_heatmap = $("#slider-handle-2");
-    $("#slider-2").slider({
-        value:1950,
-        min: 1950,
-        max: 2000,
-        step: 10,
-        create: function() {
-          handle_heatmap.text( $( this ).slider( "value" ) + "s" );
-        },
-        slide: function( event, ui ) {
-          year_heatmap = ui.value + "s";
-          handle_heatmap.text(year_heatmap);
-          updateHeatmapYear(year_heatmap);
-        }
-    });
-} );
-
-// Calls functions in chord.js code
-function restoreAllChordConnections() {
-    setSelectedGenreIndexToNull();
-    changeDataYear(year)    // Basically refreshing diagram
-}
-
-function updateChordNarrative(year) {
-    chordID = "narrative-" + year;
-    $(".chord-narratives").hide();
-    $("#" + chordID).show();
-}
-
-function updateHeatmapYear(year) {
-    heatmapFilePath = "static/heatmap_" + year + ".png";
-    $("#heatmap").attr("src", heatmapFilePath);
-}
-</script>
-<script src="chord.js"></script> -->
