@@ -1,9 +1,10 @@
 body {
-    font-family: helvetica;
+    font-family: "Raleway";
     width: 90%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.75em;
 }
 
 
@@ -16,7 +17,7 @@ img {
 }
 
 
-
+/* 
 #chord-vis {
     text-align: center;
 }
@@ -55,4 +56,4 @@ path.chord {
     margin-left: -40px;
     text-align: center;
     line-height: 1.6em;
-}
+} */
